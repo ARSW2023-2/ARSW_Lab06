@@ -12,11 +12,15 @@ apimock=(function(){
 	 mockdata["Luisa"]=[{author:"Luisa","points":[{"x":150,"y":180},{"x":115,"y":120}],"name":"Plano1"},
 	 {author:"Luisa","points":[{"x":150,"y":180},{"x":115,"y":120}],"name":"Plano2"}];
 
+	 mockdata["Karol"]=[{author:"Karol","points":[{"x":150,"y":150},{"x":150,"y":-150}],"name":"CasaAzul"},
+	 {author:"Karol","points":[{"x":110,"y":0},{"x":150,"y":130},{"x":150,"y":0},{"x":110,"y":130}],"name":"CasaVerde"}]; 
+
 
 	return {
-		getBlueprintsByAuthor:function(authname,callback){
+		getBlueprintsByAuthor:function(author,callback){
 			callback(
-				mockdata[authname]
+				author,
+				mockdata[author]
 			);
 		},
 
