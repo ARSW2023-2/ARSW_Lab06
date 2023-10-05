@@ -9,6 +9,9 @@ apimock=(function(){
 	mockdata["maryweyland"]=[{author:"maryweyland","points":[{"x":140,"y":140},{"x":115,"y":115}],"name":"house2"},
 	 {author:"maryweyland","points":[{"x":140,"y":140},{"x":115,"y":115}],"name":"gear2"}];
 
+	 mockdata["Luisa"]=[{author:"Luisa","points":[{"x":150,"y":180},{"x":115,"y":120}],"name":"Plano1"},
+	 {author:"Luisa","points":[{"x":150,"y":180},{"x":115,"y":120}],"name":"Plano2"}];
+
 
 	return {
 		getBlueprintsByAuthor:function(authname,callback){
