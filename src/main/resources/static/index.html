@@ -6,8 +6,11 @@
 
         <script src="/webjars/jquery/3.7.1/jquery.min.js"></script>
         <script src="/webjars/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+        <script src="js/apimock.js"></script>
+        <script src="js/app.js"></script>
         <link rel="stylesheet"
           href="/webjars/bootstrap/5.3.2/css/bootstrap.min.css" />
+          <link rel="stylesheet" href="./style/estilo.css">
     </head>
     <body>
         <div id="search-box">
@@ -15,7 +18,7 @@
             <form id="author-blueprints">
                 <label for="author-name">Author:</label>
                 <input type="text" id="author-name"/>
-                <input type="button" value="Get Blueprints"/>
+                <input type="button" onclick="app.getAuthorBlueprints()" value="Get Blueprints"/>
             </form>
         </div>
 
