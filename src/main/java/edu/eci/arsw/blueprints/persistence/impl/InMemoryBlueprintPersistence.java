@@ -39,7 +39,7 @@ public class InMemoryBlueprintPersistence implements BlueprintsPersistence{
         Blueprint bp1=new Blueprint("Luisa", "Plano1",pts);
         Blueprint bp2=new Blueprint("Luisa", "Plano2",pts);
 
-        Blueprint bp3=new Blueprint("karol", "Plano3",pts);
+        Blueprint bp3=new Blueprint("Karol", "Plano3",pts);
         Blueprint bp4=new Blueprint("Fernanda", "Plano4",pts);
         Blueprint bp5=new Blueprint("Daniela", "Plano5",pts);
 
