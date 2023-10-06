@@ -69,6 +69,25 @@ app = (function(){
             apimock.getBlueprintsByNameAndAuthor(author, blueprintDOM.id, _printCanvas);
         }
     };
-    return innerMockModule;
+
+    var innerAPIModule = {
+        getAuthorBlueprints: function(){
+            let author = $("#author-name").val();
+            apiclient.getBlueprintsByAuthor(author, (req, resp) => {
+                _refreshAuthorState(author, resp);
+            });
+        },
+
+        printBlueprint: function(blueprintDOM){
+            let author = $("#author-name").val();
+            apiclient.getBlueprintsByNameAndAuthor(author, blueprintDOM.id, (req, resp) => {
+                _printCanvas(resp);
+            });
+        }
+    };
+
+    //return innerMockModule;
+
+    return innerAPIModule;
 
 })();
